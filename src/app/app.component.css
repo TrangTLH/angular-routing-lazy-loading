@@ -1,0 +1,17 @@
+ul {
+  list-style: none;
+}
+li {
+  display: inline-block;
+}
+
+a {
+  display: inline-block;
+  padding: 10px;
+  margin-right: 10px;
+  text-decoration: none;
+}
+a:active {
+  color: aliceblue;
+  background: orange;
+}
