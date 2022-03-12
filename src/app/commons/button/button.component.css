@@ -1,0 +1,11 @@
+button {
+  text-align: center;
+  width: 60px;
+  padding: 8px;
+  font-weight: bolder;
+}
+
+button:active {
+  color: aliceblue;
+  background: orange;
+}
