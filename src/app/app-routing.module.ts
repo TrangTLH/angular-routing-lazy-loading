@@ -1,19 +1,21 @@
 import {NgModule} from '@angular/core';
 import {RouterModule, Routes} from '@angular/router';
-import {UserComponent} from "./user/user.component";
+
+import {Routing} from "@enums/routing.enum";
 
 const routes: Routes = [
   {
     path: '',
-    component: UserComponent
+    redirectTo: Routing.Home,
+    pathMatch: 'full'
   },
   {
     path: '',
-    loadChildren: () => import('./user/user.module').then((m) => m.UserModule)
+    loadChildren: () => import('./components/user/user.module').then((m) => m.UserModule)
   },
   {
     path: '',
-    loadChildren: () => import('./admin/admin.module').then((m) => m.AdminModule)
+    loadChildren: () => import('./components/admin/admin.module').then((m) => m.AdminModule)
   },
 ];
 

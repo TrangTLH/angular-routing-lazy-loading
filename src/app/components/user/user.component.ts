@@ -1,14 +1,16 @@
 import {Component, OnInit} from '@angular/core';
+import {Router} from "@angular/router";
+import {Routing} from "@enums/routing.enum";
 
 @Component({
-  selector: 'app-admin',
-  templateUrl: './admin.component.html',
-  styleUrls: ['./admin.component.css']
+  selector: 'app-user',
+  templateUrl: './user.component.html',
+  styleUrls: ['./user.component.css']
 })
-export class AdminComponent implements OnInit {
+export class UserComponent implements OnInit {
   users: any[] | undefined;
 
-  constructor() {
+  constructor(private router: Router) {
   }
 
   ngOnInit(): void {
@@ -68,5 +70,9 @@ export class AdminComponent implements OnInit {
         country: 'Canada'
       }
     ]
+  }
+
+  goToHomePage() {
+    this.router.navigate([`/${Routing.Home}`])
   }
 }

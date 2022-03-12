@@ -3,9 +3,9 @@ import {BrowserModule} from '@angular/platform-browser';
 import {UserComponent} from "./user.component";
 import {UserRoutingModule} from "./user-routing.module";
 import {CommonModule} from "@angular/common";
+
 @NgModule({
-  declarations: [
-  ],
+  declarations: [],
   imports: [
     BrowserModule,
     UserRoutingModule,

@@ -5,16 +5,27 @@ h2 {
 table {
   font-family: arial, sans-serif;
   border-collapse: collapse;
-  width: 800px;
+  width: 1000px;
   margin-left: 150px;
+  margin-top: 30px;
 }
 
 td, th {
   border: 1px solid #dddddd;
   text-align: left;
-  padding: 11px;
+  padding: 8px;
 }
 
 tr:nth-child(even) {
   background-color: #dddddd;
+}
+
+.action {
+  width: 60px;
+  padding: 3px;
+  margin-left: 30px;
+}
+
+.home {
+  margin-left: 150px;
 }

@@ -2,9 +2,11 @@ import {NgModule} from '@angular/core';
 import {RouterModule, Routes} from '@angular/router';
 import {AdminComponent} from "./admin.component";
 
+import {Routing} from "@enums/routing.enum";
+
 const routes: Routes = [
   {
-    path: 'admin',
+    path: Routing.Admin,
     component: AdminComponent
   },
 ];

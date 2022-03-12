@@ -1,0 +1,35 @@
+<app-h1 [title]="'Admin'"></app-h1>
+<app-button class="home" [title]="'Home'"
+            [backgroundColor]="'#00BFFF'"
+            [textColor]="'white'"
+            (click)="goToHomePage()"></app-button>
+<table class="table">
+  <thead>
+  <tr>
+    <th scope="col">Id</th>
+    <th scope="col">Compay</th>
+    <th scope="col">Contact</th>
+    <th scope="col">Country</th>
+    <th></th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr *ngFor="let user of users">
+    <th scope="row">{{ user.id }}</th>
+    <td>{{ user.company }}</td>
+    <td>{{ user.contact }}</td>
+    <td>{{ user.country }}</td>
+    <td class="button">
+      <app-button class="action" [title]="'Edit'"
+                  [backgroundColor]="'#FFA500'"
+                  [textColor]="'black'"></app-button>
+      <app-button class="action" [title]="'Delete'"
+                  [backgroundColor]="'#FF0000'"
+                  [textColor]="'white'"></app-button>
+    </td>
+  </tr>
+  </tbody>
+</table>
+<ng-template #loading>
+  Loading...
+</ng-template>
